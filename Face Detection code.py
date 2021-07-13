@@ -51,4 +51,4 @@ with mp_face_detection.FaceDetection(
     cv2.imshow('MediaPipe Face Detection', image)
     if cv2.waitKey(5) & 0xFF == 27:
       break
-cap.release()
+cap.release() 
