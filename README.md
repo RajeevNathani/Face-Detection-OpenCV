@@ -20,5 +20,10 @@ Minimum confidence value ([0.0, 1.0]) from the face detection model for the dete
 ## Algorithm-
 
 1. Firstly, import all the required libraries, here we need cv2 and MediaPipe.
-2. 
+2. Read the image using imread function in cv2 library.
+3. Flip the image horizontally for a later selfie-view display.
+4. Now, convert this image to RGB using cvtColor(image, cv2.COLOR_BGR2RGB).
+5. Now, preprocess this modified image using MediaPipe Face Detection.
+6. To improve performance, optionally mark the image as not writeable to pass by reference.
+7. Finally, Draw the face detection annotations on the image.
 
